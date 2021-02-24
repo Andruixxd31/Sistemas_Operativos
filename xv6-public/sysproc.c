@@ -98,6 +98,6 @@ int sys_shutdown(void){
 
 //reboot machine
 int sys_reboot(void){
-    outb(0xFE, 0x64);
+    outb(0x64, 0xFE);
 	return 0;
 }
